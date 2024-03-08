@@ -1,6 +1,6 @@
 # Library Overview - Colorama
 ## 1. Which package/library did you select?
-For exploration activity 2 I chose the python library Colorama.
+For exploration activity 2 I chose the python library [Colorama](https://pypi.org/project/colorama/).
 
 ## 2. What is the package/library?
 ### • What purpose does it serve?
@@ -13,7 +13,7 @@ The purpose of this library is to allow windows users the same coloured output f
 This library has the capability to style text is three different ways. Style, text colour, and background colour.
 
 ## 4. When was it created?
-The latest release of Colorama (0.4.6) was released October 24th 2022.
+The latest release of [Colorama](https://pypi.org/project/colorama/) (0.4.6) was released October 24th 2022.
 
 ## 5. Why did you select this package/library?
 ### • “Because it is interesting” is not a valid answer. Should elaborate more.

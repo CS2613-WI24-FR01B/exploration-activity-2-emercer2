@@ -1,22 +1,33 @@
 import colorama 
 from colorama import Back, Fore, Style
 
-colorama.init(convert=True)
+colorama.init(autoreset=True)
 
-def printColOp():
+def printTextColOp():
     print("Please chose a number from the following list:")
-    print("1 - black")
-    print("2 - red")
-    print("3 - green")
-    print("4 - yellow")
-    print("5 - blue")
-    print("6 - magenta")
-    print("7 - cyan")
-    print("8 - white")
+    print(Fore.BLACK + Back.WHITE + "1 - black")
+    print(Fore.RED + "2 - red")
+    print(Fore.GREEN + "3 - green")
+    print(Fore.YELLOW + "4 - yellow")
+    print(Fore.BLUE + "5 - blue")
+    print(Fore.MAGENTA + "6 - magenta")
+    print(Fore.CYAN + "7 - cyan")
+    print(Fore.WHITE + "8 - white")
+
+def printBackColOp():
+    print("Please chose a number from the following list:")
+    print(Back.BLACK + "1 - black")
+    print(Back.RED + "2 - red")
+    print(Back.GREEN + "3 - green")
+    print(Back.YELLOW + "4 - yellow")
+    print(Back.BLUE + "5 - blue")
+    print(Back.MAGENTA + "6 - magenta")
+    print(Back.CYAN + "7 - cyan")
+    print(Back.WHITE + Fore.BLACK + "8 - white")
 
 def setErrorText():
     print("Enter error text colour:")
-    printColOp()
+    printTextColOp()
     errortxt = input('')
     
     match errortxt:
@@ -41,7 +52,7 @@ def setErrorText():
 
 def setErrorBack():
     print("Enter error background colour:")
-    printColOp()
+    printBackColOp()
     errorback = input('')
 
     match errorback:
@@ -66,7 +77,7 @@ def setErrorBack():
 
 def setSuccessText():
     print("Enter success text colour:")
-    printColOp()
+    printTextColOp()
     succtxt = input('')
 
     match succtxt:
@@ -91,7 +102,7 @@ def setSuccessText():
 
 def setSuccessBack():
     print("Enter success background colour:")
-    printColOp()
+    printBackColOp()
     succback = input('')
 
     match succback:
@@ -125,10 +136,12 @@ while not(file == "Q"):
     try:
         f1 = open(file, "r")
     except:
-        print(et + eb + "Error: cannot open " + file + Style.RESET_ALL + "\n")
+        print(et + eb + "Error: cannot open " + file)
+        print()
     else:
-        print(st + sb + str(file) + " sucessfully read:" + Style.RESET_ALL)
-        print(st + f1.read() + "\n" + Style.RESET_ALL) 
+        print(st + sb + str(file) + " sucessfully read:")
+        print(st + f1.read()) 
+        print()
         f1.close()
 
     file = input('Enter file name (Enter Q to Quit): ')
