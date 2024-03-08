@@ -16,12 +16,12 @@ This program allows windows users to experiement with coloured text through the 
 
 ## 4. What would be some sample input/output?
 The program will walk you through setting colours for error and success text and background. There are four colours for the user to set, error text, error background, success text, and success background. Each colour has a similar prompt to one of the following:
-[Image of text color selection screen for success message](textColorChoice.png)
-[Image of background color selection screen for success message](BackColorChoice.png)
+![Image of text color selection screen for success message](textColorChoice.png)
+![Image of background color selection screen for success message](BackColorChoice.png)
 [!Note]
 The expected input is one of the 8 numbers listed, if input does not match the user will be reprompted.
 After all four colours are selected the user will be asked to give a file name.
-[Image of program requesting a file name from user](requestFileName.png)
+![Image of program requesting a file name from user](requestFileName.png)
 
 If the file name exists in the directory a success message and the file contents are printed in the appropriate colours.
 
