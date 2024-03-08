@@ -1,7 +1,7 @@
 import colorama 
 from colorama import Back, Fore, Style
 
-colorama.init()
+colorama.init(convert=True)
 
 def printColOp():
     print("Please chose a number from the following list:")
