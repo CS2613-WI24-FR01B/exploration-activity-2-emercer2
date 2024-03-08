@@ -23,5 +23,5 @@ After all four colours are selected the user will be asked to give a file name.<
 If the file name exists in the directory a success message and the file contents are printed in the appropriate colours.<br>
 Otherwise a error message will appear with the appropriate colours applied.
 Either way the user will then be asked be asked to enter another file name until they enter "Q" as the file name.<br><br>
-For example, if the numbers 8, 3, 8, 3 (error text, error background, success text, success background) were chosen before entering a file name, errors should appear wiht white text and a red background and success messages should appear with white text and a green background.<br>
+For example, if the numbers 8, 2, 8, 3 (error text, error background, success text, success background) were chosen before entering a file name, errors should appear wiht white text and a red background and success messages should appear with white text and a green background.<br>
 ![Image of test case disscussed](example.png)<br>
