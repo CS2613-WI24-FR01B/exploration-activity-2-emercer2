@@ -25,6 +25,12 @@ def printBackColOp():
     print(Back.CYAN + "7 - cyan")
     print(Back.WHITE + Fore.BLACK + "8 - white")
 
+def printStyleOp():
+    print("Please chose a number from the following list:")
+    print(Style.DIM + "1 - dim")
+    print(Style.NORMAL + "2 - normal")
+    print(Style.BRIGHT + "3 - bright")
+
 def setErrorText():
     print("Enter error text colour:")
     printTextColOp()
@@ -124,7 +130,23 @@ def setSuccessBack():
             return Back.WHITE
         case _:
             setErrorBack()
-    
+
+def setStyle():
+    print("Enter style:")
+    printStyleOp()
+    style = input('')
+
+    match style:
+        case "1":
+            return Style.DIM
+        case "2":
+            return Style.NORMAL
+        case "3":
+            return Style.BRIGHT
+        case _:
+            setErrorBack()
+
+style = setStyle()    
 et = setErrorText()
 eb = setErrorBack()
 st = setSuccessText()
@@ -136,11 +158,11 @@ while not(file == "Q"):
     try:
         f1 = open(file, "r")
     except:
-        print(et + eb + "Error: cannot open " + file)
+        print(style + et + eb + "Error: cannot open " + file)
         print()
     else:
-        print(st + sb + str(file) + " sucessfully read:")
-        print(st + f1.read()) 
+        print(style + st + sb + str(file) + " sucessfully read:")
+        print(style + st + f1.read()) 
         print()
         f1.close()
 
