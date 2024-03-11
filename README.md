@@ -21,7 +21,7 @@ The style prompt looks like this:<br>
 Each colour has a similar prompt to one of the following:<br>
 ![Image of text colour selection screen for success message](textColorChoice.png)![Image of background colour selection screen for success message](BackColorChoice.png)<br>
 The expected input is one of the 8 numbers listed, if input does not match the user will be prompted again.<br><br>
-After all four colours are selected the user will be asked to give a file name.<br>
+After the style and all four colours are selected the user will be asked to give a file name.<br>
 ![Image of program requesting a file name from user](requestFileName.png)<br>
 If the file name exists in the directory a success message and the file contents are printed in the appropriate colours.<br>
 Otherwise a error message will appear with the appropriate colours applied.<br>
