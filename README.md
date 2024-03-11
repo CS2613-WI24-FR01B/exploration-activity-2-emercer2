@@ -8,8 +8,8 @@ In exploration activity 2, I demonstrate features offered by the most recent ver
 For this program please ensure you have [python](https://www.python.org/downloads/) installed on your computer before performing the following steps. 
 First download the code from [the GitHub repository](https://github.com/CS2613-WI24-FR01B/exploration-activity-2-emercer2).
 There are two files to note in this repository, (1) The python program, and (2) An example text file that can be used to test the program. <br>![Image of EA2.py python program, and file.txt example file in code editor](filesInEditor.png)<br>
-<br>To run the python program you will need to install colorama using pip install in the terminal, 'pip install colorama'. 
-<br>After that you can run the program through the terminal using 'python EA2.py'. From there simply respond to the prompts given by the program.
+<br>To run the python program you will need to install colorama using pip install in the terminal, '''pip install colorama'''. 
+<br>After that you can run the program through the terminal using '''python EA2.py'''. From there simply respond to the prompts given by the program.
 
 ## 3. What purpose does your program serve?
 This program allows Windows users to experiment with coloured text through the terminal. My program asks the users to set the text colour, style, and background colour they would like for success and error messages. Then the program tries to open a given file and uses the colours specified when printing if the file was successfully opened.
